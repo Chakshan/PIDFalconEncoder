@@ -23,7 +23,7 @@ public class EncoderTalon extends PIDCommand {
     
     super(
         // The controller that the command will use
-        new PIDController(0.1, 0.02, 0.01),
+        new PIDController(0.1, 0.02, 0.0),
         // This should return the measurement
         falcon::posRotations,
         // This should return the setpoint (can also be a constant)
